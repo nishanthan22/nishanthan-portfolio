@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hostmind/host@latest/static/index.css">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="base.css" rel="stylesheet">
+    <title>Nishanthan </title>
+
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("ss6py4djaoZCZQnJr");
+    })();
+</script>
+    <nav class="nav bg-gray-900 text-white flex justify-between items-center p-3 px-8 md:px-20">
+        <a href="/" class="text-lg font-mono">Nishanthan Ravichandran</a>
+        <div class='flex space-x-4 text-xl'>
+            <i class="searchBtn mt-1 bi bi-search text-sm cursor-pointer md:hidden"></i>
+            <i class="nav-btn bi bi-list cursor-pointer md:hidden"></i>
+        </div>
+        <div class="bg-gray-900 hidden items-center md:block">
+            <a href="#index-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">Home</a>
+            <a href="#about-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">About</a>
+            <a href="#article-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">Articles</a>
+            <a href="#projects-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">Projects</a>
+			<a href="#contact-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">Contact</a>
+        </div>
+    </nav>
+
+    <div class="mob-nav bg-gray-900 hidden flex-col items-center w-full h-64 md:hidden">
+        <a href="/" class="p-2 px-36 my-1 text-white rounded-[8px] hover:bg-gray-800">Home</a>
+        <a href="/about" class="p-2 px-36 my-1 text-white rounded-[8px] hover:bg-gray-800">About</a>
+        <a href="/contact" class="p-2 px-36 my-1 text-white rounded-[8px] hover:bg-gray-800">Contact</a>
+        <a href="/articles" class="p-2 px-36 my-1 text-white rounded-[8px] hover:bg-gray-800 ">Articles</a>
+        <a href="/projects" class="p-2 px-36 my-1 text-white rounded-[8px] hover:bg-gray-800 ">Projects</a>
+      </div>
+
+	
+	<!-- Index section-->
+	
+	    <div id ="index-section" class=' hero-section bg-gray-800 text-white text-center flex flex-col justify-center items-center h-[550px] md:h-[580px] lg:h-[600px]'>
+        <span class='font-mono my-2'><span class='wave'>&#128075;</span> Hi, I am Nishanthan</span>
+        <span style="font-family: Poppins-Bold" class='z-40 text-3xl font-extrabold md:text-4xl lg:text-5xl px-[20px] md:px-[140px] lg:px-[170px] xl:px-[200px] 2xl:px-[360px]'>
+            I'm a <span class='bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400 text-transparent'>Full Stack Software</span> developer.
+        </span>
+         <div class='lottie-logo my-4'>
+             <iframe src="https://lottie.host/embed/7bf3032d-af91-46ca-bd68-85dda159d3b3/cAbX6VBPkK.json" height="300px" width="300px"></iframe>
+        </div>
+        <div class='hero-btn my-3 md:mt-2 font-bold text-sm md:text-[16px] md:leading-6'>
+            <ul class='flex flex-row gap-4 md:space-x-2'>
+                <a target="_blank" href='https://cdn.jsdelivr.net/gh/nishanthan22/nishanth-static/Nishanthan.pdf' download><div class='relative group'>
+                    <div class='bg-gradient-to-r from-cyan-300 to-blue-600 px-6 py-2 text-white rounded-md -inset-0.5 absolute blur-sm opacity-75 group-hover:-inset-1 transition group-hover:duration-400 group-hover:opacity-90 duration-1000'></div>
+                    <button class='relative bg-gray-800 px-7 py-2 text-white rounded-md group-hover:text-gray-50 transition duration-200'><i class="bi bi-download font-extrabold"></i> &nbsp;Get my Resume</button>
+                </div></a>
+                <a href='#about-section'><div class='relative group'>
+                    <div class='bg-gradient-to-r from-cyan-300 to-blue-600 px-6 py-2 text-white rounded-md -inset-0.5 absolute blur-sm opacity-75 group-hover:-inset-1 transition group-hover:duration-400 group-hover:opacity-90 duration-1000'></div>
+                    <button class='relative bg-gray-800 px-7 py-2 text-white rounded-md group-hover:text-gray-50 transition duration-200'><i class="bi bi-person"></i> About me</button>
+                </div></a>
+            </ul>
+        </div>
+    </div>
+    <div class='blog-section bg-gray-900 p-4 text-white'>
+     <p class='text-xl font-bold' style="text-align: center">TECH STACK</p>
+    <div class="tech-stack">
+        <div class="dev-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                    <i class="devicon-flask-original-wordmark"></i>
+                    <i class="devicon-github-original-wordmark"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-plain-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                    <i class="devicon-maven-plain-wordmark"></i>
+                    <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/putty/putty-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+
+                </div>
+    </div>
+    </div>
+	<!-- Index section END -->
+	
+	<!-- About section -->
+	<div id="about-section" class=' bg-gray-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
+	<div class='m-6'>
+        <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>About Me</p>
+        <p class='text-justify'>
+
+        <p><b style="color:#47B5FF" >Software Engineer</b> with a demonstrated history in <b style="color:#47B5FF " >full-stack development</b> and a keen enthusiasm for inventive solutions with experience in AI/ML technology. Proficient in developing and deploying Restful APIs, WebSocket applications, and Android applications, committed to crafting superior, maintainable code and propelling technological advancement. Creative, dedicated professional with a proven ability to learn quickly.
+        </p>
+        <div class='my-10'>
+             <!-- <p class='text-2xl font-bold grid place-items-center mb-8' style="color:#47B5FF">My Tech Stack</p> -->
+            <div class='grid grid-cols-1 md:grid-cols-2 md:space-x-4 lg:space-x-10'>
+                <div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">C</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="c bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">C++</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="cplus bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Java</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="javap bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">Python</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="py bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Kotlin</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="kotlin bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>
+                    </div>
+                     <div class='my-3'>
+                        <p class="text-base font-medium my-3">DevOps & Cloud</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="js bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                     <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">C#</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="kotlin bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">HTML</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="html bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Javascript</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="js bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">CSS</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="css bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">SQL</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="sql bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+
+                    <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">Android development</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="javap bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">Web development</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="javap bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+	
+	<!-- About section END -->
+	
+	<!-- Article section -->
+	
+	<div id="article-section" class=' bg-gray-800 text-white p-5 md:py-8 md:px-20 lg:px-40 xl:px-60'>
+    <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Articles</p>
+
+<div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+            <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="ws.png" alt="image">
+            <div>
+               <span class='text-xl font-extrabold'>The WebSocket technology: AWS WebSocket API and SockJs Library</span><br>
+                <p class='mt-2 mb-4 text-gray-400'>by  <i class="bi bi-person"></i>  <a href='/about' class='group transition-all duration-500 ease-out'>Nishanthan</a> <i class="bi bi-dot"></i> <span><i class="bi bi-calendar4-event"></i> &nbsp;April 26, 2024</span></p>
+                <a href='https://www.linkedin.com/pulse/websocket-technology-aws-api-sockjs-library-nishanthan-m-ravichandran-rvcfc/' target="_blank"><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>View <i class="bi bi-arrow-right font-extrabold"></i></button></a>
+            </div>
+</div>
+<div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+            <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="publ.png" alt="image">
+            <div>
+               <span class='text-xl font-extrabold'>An Empirical Study on Architecture and Efficiency of Dalvik VM and Android Runtime (ART)</span><br>
+                <p class='mt-2 mb-4 text-gray-400'>by  <i class="bi bi-person"></i>  <a href='/about' class='group transition-all duration-500 ease-out'>Nishanthan</a> <i class="bi bi-dot"></i> <span><i class="bi bi-calendar4-event"></i> &nbsp;August, 2022</span></p>
+                <a href='https://doi.org/10.22214/ijraset.2022.46478' target="_blank"><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>View <i class="bi bi-arrow-right font-extrabold"></i></button></a>
+            </div>
+</div>
+	
+	<!-- Article section END -->
+	
+	<!-- Project section start -->
+	
+
+<div class="flex-container">
+<div id="projects-section" class="project-card">
+  <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Projects</p>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="https://cdn.jsdelivr.net/gh/hostmind/host/static/password-generator.png" alt="image">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Brainy Bits AI<p>
+            <p class='text-justify my-3'> An AI application to monitor classroom activities, capturing students’ head poses, emotions, and eye movements, generating report on the attentiveness.</p>
+            <ul class='mb-3'>
+              <li>&#9989;  Leveraged Flask for the web framework.</li>
+              <li>&#9989;  OpenCV for image processing.</li>
+              <li>&#9989;  TensorFlow and Keras for building, loading the model</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+                 <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-flask"></i> Flask</span>
+                 <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-python"></i> Python</span>
+                <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> MySQL</span>
+                <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> AWS</span>
+                <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> OpenCV</span>
+                <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-solid fa-server"></i> Keras</span>
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="https://cdn.jsdelivr.net/gh/hostmind/host/static/web-blog-ui.png" alt="image">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">RCube Green Ecom</p>
+            <p class='text-justify my-3'>Web Blog UI is a user interface design project that utilizes HTML, CSS and JavaScript to create a visually appealing and functional blog website. The project was created with an emphasis on user-centered design principles, ensuring easy navigation and visually pleasing design.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Modern UI Blog Design</li>
+              <li>&#9989; Dark/Light/System Mode Switcher</li>
+              <li>&#9989; Responsive Design</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Js</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/ashish-makes/blog-design'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+              <a href='https://web-blog-ui.netlify.app/' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="https://cdn.jsdelivr.net/gh/hostmind/host/static/tools-website.png" alt="image">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">UNIX Shell+</p>
+            <p class='text-justify my-3'>Web Tools is a comprehensive website that offers a variety of useful tools such as a PNG to WebP converter, word counter, password generator, and video downloaders. The website was created using HTML, Tailwind CSS, and JavaScript, and has a modern and user-friendly design.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Wide range of tools.</li>
+              <li>&#9989; Responsive Design</li>
+              <li>&#9989; Dark Mode Supported</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+              <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-css3-alt"></i> Tailwind</span>
+              <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Js</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='/'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+              <a href='https://live-tools.netlify.app/' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="https://cdn.jsdelivr.net/gh/hostmind/host/static/movies-web-ui.png" alt="image">
+          <div>
+            <p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Nourish Nation</p>
+            <p class='text-justify my-3'>Movies Web UI is a movie website UI design project that was created using HTML, Tailwind CSS, and JavaScript. It features a clean and modern design with easy navigation, making it a great user experience.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Modern UI</li>
+              <li>&#9989; Responsive Design</li>
+              <li>&#9989; Easy Navigation</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-css3-alt"></i> Tailwind</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'><i class="fa-brands fa-square-js"></i> Js</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/ashish-makes/movies-website-design'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+              <a href='https://movies-web-design.netlify.app/' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+            </div>
+          </div>
+      </div>
+      <div class='flex justify-center'>
+        <a href='https://github.com/nishanthan22/'  target = '_blank' class=''><button class='bg-gray-900 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> View my Github</button></a>
+      </div></div></div>
+
+	
+	
+	<!-- Project section END -->
+	
+	<!-- Contact section START -->
+	<div id="contact-section" class=' bg-gray-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
+    <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Contact</p>
+
+
+    <form class='flex-col p-5' action="/contact" id="contact-form" name="contactForm" method="POST">
+    
+        <div class='name'>
+            <label for="name">Name</label><br>
+            <input class='p-3 w-full my-2 bg-gray-900 border-slate-700 rounded-lg' type="text" id="name" placeholder="Your Name" name="name">
+        </div>
+        <div class='email'>
+            <label for="email">Email</label><br>
+            <input class='p-3 w-full my-2 bg-gray-900 border-slate-700 rounded-lg' type="text" id="email" placeholder="Your Email" name="email">
+        </div>
+        <div class='message'>
+            <label for="message">Message</label><br>
+            <textarea class='p-3 resize-none w-full h-72 my-2 bg-gray-900 border-slate-700 rounded-lg' id="message" placeholder="Message" name="message"></textarea>
+        </div>
+        <div class="flex justify-center">
+            <button type="submit" class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'><i class="fa-regular fa-paper-plane"></i> Send</button>
+        </div>
+    </form>
+</div>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        if (!name || !email || !message) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        var templateParams = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        emailjs.send('service_cjrxq3n', 'template_gt5b89b', templateParams)
+            .then(function(response) {
+               console.log('SUCCESS!', response.status, response.text);
+               alert('Email sent successfully!');
+            }, function(error) {
+               console.log('FAILED...', error);
+               alert('Failed to send email. Please try again later.');
+            });
+    });
+</script>
+	<!-- Contact section END -->
+      </div>
+   <footer class='bg-gray-800 text-white p-8 pb-2 flex flex-col items-center'>
+    <div class='socials text-center'>
+        <p class='text-xl font-bold'>Connect with me<p>
+        <ul class='social-element my-3 flex space-x-4 justify-center text-xl'>
+            <li><a href='https://github.com/nishanthan22/' target="_blank" class='hover:text-blue-100'><i class="bi bi-github"></i></a></li>
+            <li><a href='https://www.linkedin.com/in/nishanth-ravichandran22/' target="_blank" class='hover:text-blue-100'><i class="bi bi-linkedin"></i></a></li>
+            <li><a href='https://instagram.com/nishanth22_' target="_blank" class='hover:text-blue-100'><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </div>
+</footer>
+<div style="background-color: #111827" class='bg-slate-800 text-white text-center flex justify-center items-center'>
+    <p class='p-2'>Copyright &copy;<script>document.write(new Date().getFullYear())</script> <span class="text-blue-300"><a href="/" target="_blank">Nishanthan</a></span> All Rights Reserved</p>
+</div>
+
+
+    <div class="searchModal text-white z-50 fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center">
+        <div class="fixed inset-0 transition-opacity">
+          <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
+        </div>
+        <div class='modal animate-reveal flex items-center justify-center h-screen'>
+            <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-sm sm:w-full">
+                <form class="px-10 py-10">
+                    <div class="text-xl text-center font-extrabold mb-4">Search</div>
+      
+                    <!-- Search Input -->
+                    <div class="mb-4 flex space-x-2">
+                        <input type="text" class="searchInput w-full bg-gray-800 border border-slate-700 rounded-lg py-2 px-4 outline outline-transparent" placeholder="Enter your search query...">
+                        <a type="submit" class="searchSubmitBtn bg-slate-700 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg" href=""><i class="bi bi-search"></i></a>
+                    </div>
+                </form>
+                <!-- Close Button -->
+                <button class="searchCloseBtn m-2 absolute top-0 right-0 font-medium transition-colors p-4 focus:outline-none" aria-label="Close"><i class="bi bi-x text-xl"></i></button>
+    
+                <div class='mx-3'>
+                <div class='flex md:flex-grow-2 justify-start space-x-3 text-sm md:text-base m-4 -mt-10 mb-8'>
+                  <a href='/category/Python' class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>Python</button></a>
+                  <a href='/category/JavaScript' class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>JavaScript</button></a>
+                  <a href='/category/Design'  class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>Design</button></a>
+                </div>
+    
+                <div class='flex md:flex-grow-2 justify-start space-x-3 text-sm md:text-base m-4 -mt-10'>
+                  <a href='/category/Web Design' class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>Web Design</button></a>
+                  <a href='/category/Frameworks' class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>Frameworks</button></a>
+                </div>
+    
+                <div class='flex md:flex-grow-2 justify-start space-x-3 text-sm md:text-base m-4 -mt-6'>
+                    <a href='/category/Tools'  class='sm:text-[12px] '><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'>Tools</button></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<style>
+  body {
+    font-family: Poppins;
+    transition: 0.3s ease-in-out;
+  }
+	.bg-clip-text {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #67e8f9, #3b82f6);
+}
+
+  .wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;    
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;    
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+
+
+
+  @keyframes up-down {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.searchModal {
+  display: none;
+}
+.radius-hover {
+    
+}
+.animate-reveal {
+    animation: reveal 0.3s ease-out;
+  }
+
+@keyframes reveal {
+    from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+    to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+.lottie-logo {
+    padding: 20px;
+}
+
+
+.dev-icons {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.dev-icons img {
+  max-width: 100%; 
+  height: 40pt; 
+  margin: 20px;
+}
+.dev-icons i {
+  max-width: 100%;
+  margin: 20px;
+  font-size: 40pt;
+}
+.dev-animation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dev-animation iframe {
+  height: 200pt;
+  margin: 20pt;
+}
+.bg-clip-text {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #67e8f9, #3b82f6);
+}
+  .progress-bar {
+            animation: progress-bar-animation 1s normal forwards;
+        }
+        @keyframes progress-bar-animation {
+            0%   {  width: 0%; }
+            100% {  width: 100%; }
+        }
+        .html {
+            animation: html-animation 3s normal forwards;
+			scroll-behavior: smooth;
+        }
+        @keyframes html-animation {
+            0%   {  width: 0%; }
+            100% {  width: 95%; }
+        }
+        .css {
+            animation: css-animation 3s normal forwards
+        }
+        @keyframes css-animation {
+            0%   {  width: 0%; }
+            100% {  width: 85%; }
+        }
+        .js {
+            animation: js-animation 3s normal forwards
+        }
+        @keyframes js-animation {
+            0%   {  width: 0%; }
+            100% {  width: 70%; }
+        }
+        .py {
+            animation: py-animation 3s normal forwards
+        }
+        @keyframes py-animation {
+            0%   {  width: 0%; }
+            100% {  width: 90%; }
+        }
+        .sql {
+            animation: sql-animation 3s normal forwards
+        }
+        @keyframes sql-animation {
+            0%   {  width: 0%; }
+            100% {  width: 80%; }
+        }
+        .javap {
+            animation: java-animation 3s normal forwards
+        }
+        @keyframes java-animation {
+            0%   {  width: 0%; }
+            100% {  width: 100%; }
+        }
+         .kotlin {
+            animation: kotlin-animation 3s normal forwards
+        }
+        @keyframes kotlin-animation {
+            0%   {  width: 0%; }
+            100% {  width: 60%; }
+        }
+		
+		/* Ensure the container properly wraps content */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem; /* Adjust as needed */
+}
+
+/* Ensure images are responsive */
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Adjust as needed */
+    object-fit: cover; /* Adjusts image to fit the container */
+}
+
+/* Project cards */
+.project-card {
+    flex: 1 1 calc(33.333% - 2rem); /* Adjust for 3 items per row, with a gap */
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+/* Make the header sticky */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+	height: 70px; 
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Apply transparency when the page is scrolled */
+.nav-scrolled {
+    background-color: rgba(17, 24, 39, 0.8); /* Adjust the color and transparency */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+}
+
+.section-padding {
+    padding-top: 100px; /* Adjust based on navbar height */
+
+}
+</style>
+
+<script>
+// Select all links with hashes
+document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+// Get the navigation bar
+const navbar = document.querySelector('nav');
+
+// Get all sections
+const sections = document.querySelectorAll('section');
+
+// Function to handle padding when scrolling
+function handleScroll() {
+    if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+        navbar.classList.add('nav-scrolled');
+        sections.forEach(section => section.classList.add('section-padding'));
+    } else {
+        navbar.classList.remove('nav-scrolled');
+        sections.forEach(section => section.classList.remove('section-padding'));
+    }
+}
+
+// Add an event listener to the window for scrolling
+window.addEventListener('scroll', handleScroll);
+
+  const toggleButton = document.querySelector('.nav-btn');
+  const navbarContent = document.querySelector('.mob-nav');
+
+  toggleButton.addEventListener('click', () => {
+    if (navbarContent.classList.contains('hidden')) {
+      navbarContent.classList.replace('hidden', 'flex');
+    } else {
+      navbarContent.classList.replace('flex', 'hidden');
+    }
+  });
+
+  // Store DOM elements in variables
+  const searchBtn = document.querySelector(".searchBtn");
+  const searchBtn1 = document.querySelector(".searchBtn1");
+  const searchModal = document.querySelector(".searchModal");
+  const Modal = document.querySelector(".modal");
+  const searchCloseBtn = document.querySelector(".searchCloseBtn");
+  const searchSubmitBtn = document.querySelector(".searchSubmitBtn");
+  const searchInput = document.querySelector(".searchInput");
+
+  // Show Search Modal function
+  function showSearchModal() {
+    searchModal.style.display = "block";
+  }
+
+  // Hide Search Modal function
+  function hideSearchModal() {
+    searchModal.style.display = "none";
+  }
+
+  // Submit Search Form function
+  function submitSearchForm(event) {
+    event.preventDefault();
+    const searchQuery = searchInput.value.trim();
+    if (!searchQuery) {
+      searchInput.classList.add('shake');
+      setTimeout(function() {
+        searchInput.classList.remove('shake');
+      }, 500);
+      return;
+    }
+    window.open("/search/?q=" + encodeURIComponent(searchQuery));
+  }  
+
+  // Add event listeners
+  searchBtn.addEventListener("click", showSearchModal);
+  searchBtn1.addEventListener("click", showSearchModal);
+  searchCloseBtn.addEventListener("click", hideSearchModal);
+  searchSubmitBtn.addEventListener("click", submitSearchForm);
+</script>
+
+</html>
