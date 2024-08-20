@@ -18,9 +18,14 @@
          (function(){
              emailjs.init("ss6py4djaoZCZQnJr");
          })();
+		 function reloadAndGoTop() {
+			window.location.reload();  // Reloads the page
+			window.scrollTo(0, 0);     // Scrolls to the top of the page
+		 }
       </script>
+
       <nav class="nav bg-gray-900 text-white flex justify-between items-center p-3 px-8 md:px-20">
-         <a href="/" class="text-lg font-mono">Nishanthan Ravichandran</a>
+         <a href="#" class="text-lg font-mono" onclick="reloadAndGoTop()">Nishanthan Ravichandran</a>
          
          <div class="bg-gray-900 hidden items-center md:block">
             <a href="#index-section" class="p-2 px-3 my-1 text-white rounded-[8px] hover:bg-gray-800">Home</a>
